@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+.app-main {
+  margin-top: 25px;
+}
+
+.rows {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row {
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+}
+
+.cell {
+  border: 2px solid #eee;
+  padding: 30px;
+  margin: 5px;
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  font-weight: 800;
+}
+
+.cell.correct {
+  background-color: rgb(143, 233, 143);
+}
+
+.cell.incorrect {
+  background-color: rgb(233, 143, 143);
+}
+
+.cell.nearly-correct {
+  background-color: rgb(233, 233, 143);
+}
+
+.keyboard {
+  margin-top: 25px;
+}
+
+.keyboard>.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard .key {
+  width: 45px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  margin: 2px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-weight: 200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keyboard .key.backspace {
+  width: 70px;
+}
+
+.keyboard .key.enter {
+  width: 70px;
+}
+
+.keyboard .bottom-row {
+  margin-right: 120px;
+}
+
+.keyboard .key:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.keyboard .key:active {
+  background-color: #e0e0e0;
+}
+
+.outcome {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 36px;
+}
+
+.outcome.won {
+  color: darkgreen;
+}
+
+.outcome.lost {
+  color: darkred;
+}
